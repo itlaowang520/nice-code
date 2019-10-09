@@ -1,0 +1,38 @@
+.activityTest-page{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    .input {
+        display: block;
+        padding: 0.5rem;
+        font-size: 1.5rem;
+        border: 1px solid;
+        margin-top: 2rem;
+        width: 80%;
+    }
+    .btn{
+        width: 80%;
+        height: 3rem;
+        background: #00c016;
+        font-size: 1.5rem;
+        color: #fff;
+        margin-top: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0.5rem;
+    }
+    .radio {
+        margin-top: 2rem;
+        width: 50%;
+        height: 3rem;
+        display: flex;
+        font-size: 1.5rem;
+        align-items: center;
+        justify-content: space-between;
+        .act{
+            color: #ff7032;
+        }
+    }
+}

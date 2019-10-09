@@ -1,0 +1,59 @@
+.extend-modal {
+    position: absolute;
+    width: 100%;
+    height: 10rem;
+    background: #eee;
+    z-index: 10;
+    border-radius: 10px;
+
+    .extend-modal-top {
+        position: relative;
+        height: 3rem;
+        background: #fff;
+        border-radius: 10px 10px 0 0;
+
+        .extend-modal-title {
+            color: #999;
+            line-height: 3rem;
+            font-size: 1.2rem;
+            padding-left: 1rem;
+            border-radius: 10px;
+        }
+
+        .extend-modal-icon {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 10%;
+            height: 3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .extend-modal-content {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: .5rem;
+
+        .extend-modal-item {
+            position: relative;
+            font-size: 1.2rem;
+            height: 2rem;
+            width: 33%;
+            text-align: center;
+            line-height: 2rem;
+
+            .current {
+                position: absolute;
+                left: 0.5rem;
+                width: 2rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
