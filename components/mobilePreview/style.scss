@@ -1,0 +1,200 @@
+.ksui-show-phone {
+    width: 440px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    .phone-tool-container {
+        width: 100%;
+        height: 44px;
+        display: flex;
+        border-bottom: 1.4px solid #f0f2f4;
+        justify-content: center;
+        align-items: center;
+        .ant-select {
+            margin: 0 10px;
+        }
+    }
+    .mobile-show-container {
+        width: 100%;
+        display: flex;
+        flex: 1;
+        overflow: scroll;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        .following-form {
+            width: 350px;
+            // background: #eee;
+            background: #24292e;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 30px;
+            position: relative;
+            .media-container {
+                width: 100%;
+                height: 65px;
+                position: relative;
+                .photo {
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 10px;
+                    background: #126eca;
+                    // border: 3px solid #24292e;
+                    border: 3px solid #666;
+                    margin: 20.4px 0 0 130px;
+                }
+                .audio-feel {
+                    position: absolute;
+                    width: 100%;
+                    top: 0;
+                    left: 0;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: center;
+                    .feel {
+                        width: 7px;
+                        height: 7px;
+                        border-radius: 7px;
+                        // background: #24292e;
+                        background: #666;
+                        margin-top: 6px;
+                    }
+                    .audio {
+                        width: 50px;
+                        height: 4px;
+                        border-radius: 4px;
+                        // background: #24292e;
+                        background: #666;
+                        margin-top: 10px;
+                    }
+                }
+            }
+            .content {
+                width: 320px;
+                height: 568px;
+                background: #fff;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                .mobile-content {
+                    width: 100%;
+                    display: flex;
+                    flex: 1;
+                    overflow-y: scroll;
+                    .mobile-content-scroll{
+                        width: 100%;
+                    }
+                    .mobile-content-active-floor{
+                        position: relative;
+                        border: 1px dashed #38f;
+                        .active-img{
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            font-size: 20px;
+                            color: #dd1144;
+                        }
+                    }
+                    .mobile-content-active-floor-share{
+                        .shareFloor-page{
+                            border: 1px dashed #38f;
+                        }
+                        .active-img{
+                            position: absolute;
+                            top: 10px;
+                            right: 0;
+                            font-size: 20px;
+                            color: #dd1144;
+                        }
+                    }
+                    .mobile-content-floor{
+                        border: 0;
+                    }
+                    .mobile-content-active-floor-fixed{
+                        .active-img{
+                            position: absolute;
+                            bottom: 150px;
+                            right: -5px;
+                            font-size: 20px;
+                            color: #F00;
+                        }
+                    }
+                }
+                .mobile-content::-webkit-scrollbar {
+                    width: 0px;
+                    height: 0px;
+                }
+            }
+            .mobile-button-container {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex: 1;
+                .button {
+                    // width: 44px;
+                    // height: 44px;
+                    border-radius: 44px;
+                    border: 2px solid #fff;
+                }
+            }
+            .left-button1 {
+                width: 6px;
+                height: 30px;
+                // background: #eee;
+                background: #24292e;
+                position: absolute;
+                left: -4px;
+                top: 70px;
+                border-radius: 4px 0 0 4px;
+            }
+            .left-button2 {
+                width: 6px;
+                height: 50px;
+                // background: #eee;
+                background: #24292e;
+                position: absolute;
+                left: -6px;
+                top: 130px;
+                border-radius: 4px 0 0 4px;
+            }
+            .left-button3 {
+                width: 6px;
+                height: 50px;
+                // background: #eee;
+                background: #24292e;
+                position: absolute;
+                left: -6px;
+                top: 190px;
+                border-radius: 4px 0 0 4px;
+            }
+            .right-button1 {
+                width: 6px;
+                height: 50px;
+                // background: #eee;
+                background: #24292e;
+                position: absolute;
+                right: -6px;
+                top: 130px;
+                border-radius: 0 4px 4px 0;
+            }
+        }
+    }
+    .mobile-show-container::-webkit-scrollbar {
+        width: 0px;
+        height: 0px;
+    }
+    #UFO{
+        position: absolute;
+    }
+    .ufo-active-img{
+        position: absolute;
+        left: 283px;
+        top: 348px;
+        font-size: 20px;
+        color: #dd1144;
+    }
+}

@@ -1,3 +1,4 @@
+// 版本更新内容组件
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { mask, versionTransform } from './utils';
