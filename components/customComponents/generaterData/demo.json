@@ -1,0 +1,20 @@
+{
+    "name": "tom",
+    "age": 19,
+    "sex": "男",
+    "wifeInfo": {
+        "name": "jarry",
+        "age": 40,
+        "sex": "女"
+    },
+    "children": [
+        {
+            "name": "dog",
+            "age": 1
+        },
+        {
+            "name": "cat",
+            "age": 2
+        }
+    ]
+}
