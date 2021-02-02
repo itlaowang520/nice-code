@@ -1,0 +1,31 @@
+{
+    "name": "ks-server-project-monitor",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "complie": "ks start",
+        "build": "ks build",
+        "start": "NODE_ENV=test node ./output/index.js",
+        "pm2-test": "pm2 start ./processes.json",
+        "pm2": "pm2 start ./processes.pro.json"
+    },
+    "author": "",
+    "license": "ISC",
+    "ks-web-cli": {
+        "type": "server",
+        "publicPath": "/"
+    },
+    "dependencies": {
+        "koa": "^2.6.2",
+        "koa-bodyparser": "^4.2.1",
+        "koa-router": "^7.4.0",
+        "koa2-cors": "^2.0.6",
+        "ks-utils": "^2.3.9",
+        "mongodb": "^3.1.10",
+        "winston": "^3.2.1"
+    },
+    "devDependencies": {
+        "ks-web-cli": "^2.4.5"
+    }
+}
