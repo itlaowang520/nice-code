@@ -1,0 +1,50 @@
+.ks-container {
+    border: 1px solid #d9d9d9;
+    border-radius: 7px;
+    margin-bottom: 15px;
+
+    .ks-container-title {
+        cursor: pointer;
+        width: 100%;
+        padding: 10px 15px;
+        background-color: #f4f7f9;
+        border-radius: 7px 7px 0 0;
+        font-weight: bold;
+        position: relative;
+        padding-right: 30px;
+    }
+
+    .title-hidden {
+        border-radius: 7px;
+    }
+
+    .container {
+        padding: 10px 15px;
+        border-radius: 0 0 7px 7px;
+    }
+
+    .hidden {
+        height: 0;
+        overflow: hidden;
+        padding: 0;
+    }
+
+    .search-form-right-icon {
+        margin-right: 5px;
+        color: #555;
+        transition: transform .3s;
+    }
+
+    .expand {
+        transform: rotate(-180deg);
+    }
+
+    .toggle {
+        font-size: 12px;
+        color: #555;
+        position: absolute;
+        right: 5px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}

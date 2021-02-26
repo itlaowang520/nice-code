@@ -1,0 +1,18 @@
+.switcher-title-search {
+    display: flex;
+    flex-direction: row;
+
+    .switcher-title-text {
+        width: 100px;
+        padding-right: 24px;
+    }
+
+    .ant-input-search {
+        width: 150px;
+
+        .ant-input {
+            background-color: transparent;
+            font-size: 13px;
+        }
+    }
+}

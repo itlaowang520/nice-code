@@ -1,0 +1,55 @@
+.create-input-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap; 
+    
+    .spec-value{
+        margin-right: 15px;
+        width: 150px;
+        position: relative;
+        box-sizing: border-box;
+        .close-input-item{
+            position: absolute;
+            top: -2px;
+            right: -6px;
+            display: none;
+            color: rgba(0,0,0,0.35);
+            cursor: pointer;
+            background-color: #fff;
+        }
+    }
+    .spec-value:hover{
+        .close-input-item{
+            display: block;
+        }   
+    }
+    .input-add-button{
+        margin-top: 3px;
+    }
+}
+
+.create-input-wrapper-row {
+    width: 100%;
+    .spec-value{
+        position: relative;
+        box-sizing: border-box;
+        .close-input-item{
+            position: absolute;
+            top: -2px;
+            right: -6px;
+            display: none;
+            color: rgba(0,0,0,0.35);
+            cursor: pointer;
+            background-color: #fff;
+        }
+    }
+    .spec-value:hover{
+        .close-input-item{
+            display: block;
+        }   
+    }
+    .input-add-button{
+        margin-top: 3px;
+    }
+}

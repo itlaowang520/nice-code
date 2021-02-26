@@ -1,0 +1,146 @@
+@import "../../styles/componentsStyle.scss";
+
+$file-border: #d9d9d9;
+$file-bg-color: #fafafa;
+$file-mask: rgba(0, 0, 0, .5);
+
+.ks-upload {
+    &::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+}
+
+.file {
+    float: left;
+    width: 104px;
+    height: 104px; // 119px;
+    margin: 0 12px 12px 0;
+    padding: 8px;
+    border: 1px dashed $file-border;
+    background-color: $file-bg-color;
+    border-radius: 4px;
+    position: relative;
+
+    .file-info {
+        width: 100%;
+        height: 86px;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+
+        .file-mask {
+            position: absolute;
+            background-color: $file-mask;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            display: none;
+        }
+
+        .file-thumbnail {
+            width: 100%;
+        }
+
+        .file-action {
+            font-size: 16px;
+            position: absolute;
+            //top: 25%;
+            color: rgba(255, 255, 255, .8);
+            left: 50%;
+            transform: translateX(-50%);
+            cursor: pointer;
+            display: none;
+
+            &:hover {
+                color: rgba(255, 255, 255, 1);
+            }
+        }
+
+        &:hover .file-mask,
+        &:hover .file-action {
+            display: flex;
+        }
+    }
+
+    .file-name {
+        line-height: 20px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .file-delete {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        line-height: 18px;
+        background: $file-bg-color;
+        right: -10px;
+        top: -10px;
+        font-size: 12px;
+        border: 1px solid $file-border;
+        border-radius: 100%;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #f0f0f0;
+        }
+    }
+
+    .fileImg {
+        max-height: 100px;
+        max-width: 100%;
+        float: left;
+    }
+
+    .fileIcon {
+        cursor: pointer;
+        margin-left: 20px;
+    }
+
+    .file-uploading {
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        right: 8px;
+        height: 86px;
+
+        .file-uploading-mask {
+            position: absolute;
+            background-color: $file-mask;
+            height: 86px;
+            left: 0;
+            top: 0;
+            right: 0;
+            z-index: 10;
+        }
+
+        .file-progress {
+            position: relative;
+            z-index: 20;
+            height: 100%;
+            padding: 20px 3px;
+        }
+    }
+}
+
+.file-error {
+    border-color: $error-border;
+}
+
+.add-file {
+    height: 99px;
+    position: relative;
+
+    .add-file-center {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}

@@ -1,0 +1,41 @@
+.colContainer {
+    position: relative;
+    box-sizing: border-box;
+    height: 100%;
+    overflow: hidden;
+    z-index: 5;
+
+    .colWhiteCard {
+        position: relative;
+        box-sizing: border-box;
+        border: 1px solid #e7e7e7;
+        border-radius: 4px;
+        background: #fff;
+        padding: 5px;
+
+        .colWhiteCard-title {
+            font-weight: bold;
+            font-size: 14px;
+            box-sizing: border-box;
+            padding: 5px;
+            // border-bottom: 1px solid #d9d9d9;
+        }
+
+        .colWhiteCard-content {
+            position: relative;
+            margin-top: 5px;
+        }
+    }
+
+    .colWhiteCard-divider {
+        position: relative;
+        box-sizing: border-box;
+        padding: 3px;
+        width: 100%;
+        cursor: row-resize;
+
+        &:hover {
+            color: #1890ff;
+        }
+    }
+}

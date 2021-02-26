@@ -1,0 +1,48 @@
+.layout {
+    height: calc(100vh - 112px);
+    position: relative;
+}
+
+.modalLayout {
+    min-height: 300px;
+    background-color: #fff;
+}
+
+.layoutSider {
+    background: #fff;
+    border: solid 1px #e7e7e7;
+    border-radius: 7px;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.layoutTitle {
+    margin: 0 5px 5px;
+    text-indent: 15px;
+    border-bottom: 1px solid #e7e7e7;
+    line-height: 30px;
+    height: 30px;
+    font-weight: bold;
+}
+
+.sider-content {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.sider-content-title {
+    height: calc(100% - 35px);
+    overflow-y: auto;
+}
+
+.sider-drag-line {
+    position: absolute;
+    top: 5px;
+    left: 185px;
+    cursor: ew-resize;
+    background-color: transparent;
+    width: 1px;
+    height: calc(100vh - 122px);
+    z-index: 99999;
+}
+

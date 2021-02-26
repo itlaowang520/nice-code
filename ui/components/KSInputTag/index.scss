@@ -1,0 +1,34 @@
+.create-input-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    .spec-value {
+        margin-right: 15px;
+        margin-bottom: 10px;
+        width: 150px;
+        position: relative;
+        box-sizing: border-box;
+
+        .close-input-item {
+            position: absolute;
+            top: -2px;
+            right: -6px;
+            display: none;
+            color: rgba(0, 0, 0, .35);
+            cursor: pointer;
+            background-color: #fff;
+        }
+    }
+
+    .spec-value:hover {
+        .close-input-item {
+            display: block;
+        }
+    }
+
+    .input-add-button {
+        margin-top: 3px;
+    }
+}

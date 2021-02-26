@@ -1,0 +1,32 @@
+.bizSelectTags-disabled-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.dnd-item {
+    position: relative;
+
+    .bizSelectTags-tagsContainer-item {
+        position: relative;
+        cursor: move;
+        width: 100px;
+        margin-right: 10px;
+        text-align: center;
+
+        .bizSelectTags-tagsContainer-text {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .bizSelectTags-tagsContainer-close {
+            position: absolute;
+            transform: translate(50%, -50%);
+            top: 0;
+            right: 0;
+            z-index: 1;
+            cursor: pointer;
+        }
+    }
+}

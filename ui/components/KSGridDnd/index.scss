@@ -1,0 +1,33 @@
+.ks-grid-dnd-container {
+    width: 100%;
+    overflow: scroll;
+
+    .ks-grid-dnd-wrapper {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+
+        .ks-grid-dnd-item {
+            position: relative;
+            list-style: none;
+            box-sizing: border-box;
+
+            * {
+                max-width: 100%;
+            }
+
+            .ks-grid-dnd-moving-node {
+                margin: 0 !important;
+                padding: 0;
+                position: absolute;
+                left: 0;
+                top: 0;
+                opacity: .3;
+                z-index: 1;
+            }
+        }
+    }
+}
+

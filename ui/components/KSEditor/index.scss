@@ -1,0 +1,70 @@
+.editorContainer {
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .bf-container {
+        &.disabled {
+            pointer-events: auto;
+
+            .bf-controlbar {
+                pointer-events: none;
+            }
+        }
+    }
+
+    .dropdown-content-inner {
+        max-height: 500px;
+        overflow-y: auto;
+    }
+
+    .sketch-picker {
+        line-height: 15px;
+
+        input {
+            width: 100% !important; // 源码中 写在了input行内样式， 因此写本样式覆盖
+        }
+    }
+
+    .bf-font-size-dropdown {
+        min-width: 0;
+    }
+
+    .bf-line-height-dropdown {
+        min-width: 0;
+    }
+
+    .headings-dropdown {
+        min-width: 0;
+    }
+
+    .bf-font-sizes,
+    .bf-letter-spacings,
+    .bf-line-heights {
+        box-sizing: content-box;
+    }
+
+    .component-wrapper {
+        display: block;
+        float: left;
+        height: 36px;
+        margin: 5px 0 5px 0;
+        box-sizing: border-box;
+        min-width: 36px;
+        padding: 0 8px;
+        background-color: transparent;
+        border: none;
+        color: #6a6f7b;
+        font-size: 14px;
+        line-height: 36px;
+        text-align: center;
+
+        &:hover {
+            background-color: rgba(0, 0, 0, .05);
+            cursor: pointer;
+        }
+    }
+}

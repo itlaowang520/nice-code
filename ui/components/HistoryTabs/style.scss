@@ -1,0 +1,28 @@
+.historyTabs-container {
+    .ant-tabs.ant-tabs-card {
+        .ant-tabs-bar {
+            background: #fff;
+            margin: 0;
+            border-top: 1px solid #f0f2f5;
+            border-bottom: none;
+            padding: 0 12px;
+
+            .ant-tabs-nav-container {
+                height: 30px !important;
+
+                .ant-tabs-tab {
+                    height: 30px;
+                    line-height: 30px;
+                    padding: 0 6px;
+                    margin-right: 3px;
+                }
+
+                .ant-tabs-tab-active {
+                    height: 30px;
+                    line-height: 30px;
+                    padding: 0 6px;
+                }
+            }
+        }
+    }
+}

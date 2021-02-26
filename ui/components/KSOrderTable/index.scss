@@ -1,0 +1,39 @@
+.order-table {
+    border: 1px solid #e8e8e8;
+    overflow-x: auto;
+    
+    table {
+        thead {
+            tr {
+                border-bottom: 1px solid #e8e8e8;
+
+                th {
+                    padding: 5px;
+                }
+            }
+        }
+        
+        .order-table-body {
+            tr {
+                &.order-table-tr-border-btm {
+                    border-bottom: 1px solid #e8e8e8;
+                }
+
+                &.order-table-tr-border-btm:last-child {
+                    border-bottom: none;
+                }
+                
+
+                td {
+                    padding: 8px;
+                }
+            }
+        }
+    }
+}
+
+.order-table-pagination {
+    border-top: 1px solid #e8e8e8;
+    padding: 5px;
+    text-align: right;
+}

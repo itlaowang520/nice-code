@@ -1,0 +1,127 @@
+.ks-upload {
+    font-size: 14px;
+    font-variant: tabular-nums;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.65);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    outline: 0;
+
+    &.ks-upload-select-picture-card {
+        display: table;
+        width: 104px;
+        height: 104px;
+        margin-right: 8px;
+        margin-bottom: 8px;
+        text-align: center;
+        vertical-align: top;
+        background-color: #fafafa;
+        border: 1px dashed #d9d9d9;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: border-color 0.3s ease;
+    }
+
+    .add-file {
+        height: 99px;
+        position: relative;
+
+        .add-file-center {
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    .add-file-disabled {
+        cursor: not-allowed;
+    }
+}
+
+.select-file-wrapper {
+    box-sizing: border-box;
+    .file-list-search-form {
+        margin-bottom: 15px;
+    }
+
+    .file-item {
+        cursor: pointer;
+        padding: 8px;
+        border: 1px solid #d5d7d7;
+        height: 73px;
+        margin-bottom: 10px;
+        display: flex;
+        box-sizing: border-box;
+        overflow: hidden;
+        &.selected {
+            border-color: #68a1f4;
+        }
+
+        &.file-item-disabled {
+            cursor: not-allowed;
+        }
+        .file-item-file-exclamation {
+            font-size: 55px;
+            text-align: center;
+        }
+        .file-item-img {
+            position: relative;
+            width: 100%;
+        }
+
+        .file-item-info {
+            box-sizing: border-box;
+            margin-left: 25px;
+            line-height: 28px;
+            width: calc(100% - 80px);
+            .file-title-info {
+                color: #757575;
+                overflow: hidden;
+                .title {
+                    display: inline-block;
+                    width: 100%; // calc(100% - 40px);
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                }
+            }
+
+            .file-additional-info {
+                color: #acacac;
+                font-size: 12px;
+            }
+        }
+    }
+
+    .file-pagination {
+        text-align: right;
+        // margin-right: -8px;
+        margin-top: 5px;
+    }
+}
+
+.upload-file-wrapper {
+    .extra-info {
+        margin-bottom: 8px;
+
+        .ant-form-item-control {
+            line-height: 25px;
+        }
+
+        .file-format-info {
+            color: #babbba;
+        }
+
+        .file-length-info {
+            color: #ff2d2d;
+        }
+    }
+}
+
+.warm-tips {
+    color: #ff2d2d;
+    margin-top: 20px;
+}

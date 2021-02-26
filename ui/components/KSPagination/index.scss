@@ -1,0 +1,18 @@
+@import "../../styles/componentsStyle.scss";
+
+.table-content {
+    position: relative;
+    border-radius: 4px;
+    border: 1px solid $border-color;
+
+    .table-pagination {
+        border-top: 1px solid $border-color;
+        border-radius: 0 0 4px 4px;
+        text-align: right;
+        padding: 5px;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+    }
+}

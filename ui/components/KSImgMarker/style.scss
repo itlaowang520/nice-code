@@ -1,0 +1,149 @@
+.mark-paper {
+  .mark-paper-container {
+    display: flex;
+    justify-content: space-between;
+    min-width: 960px;
+    height: calc(100vh - 150px);
+  }
+
+  .mark-paper-wrap {
+    cursor: move;
+    overflow: hidden;
+    width: 70%;
+    height: 100%;
+    border: #666 1px solid;
+    border-radius: 8px;
+    background: #333;
+  }
+
+  .mark-paper-tips {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: #d7d7d7;
+    font-size: 1.6em;
+    text-align: center;
+    letter-spacing: 2px;
+    cursor: default
+  }
+
+  .mark-paper-mask {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: #333;
+    z-index: 999;
+
+    .ant-spin-text {
+      margin-top: 16px;
+    }
+  }
+
+  .mark-paper-sider {
+    position: relative;
+    width: 25%;
+    height: 100%;
+    padding: 20px;
+    border: #66a6ff 1px solid;
+    border-radius: 8px;
+    background: #fff;
+    transition: all .25s ease;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+      display: none;
+      // width: 8px;
+      // border-radius: 20px;
+    }
+
+    // &::-webkit-scrollbar-track {
+    //   border-radius: 20px;
+    // }
+
+    // &::-webkit-scrollbar-thumb {
+    //   border-radius: 20px;
+    // }
+    .mark-paper-sider-save {
+      position: absolute;
+      bottom: 10px;
+      width: 80%;
+      left: 50%;
+      transform: translate(-50%);
+    }
+  }
+
+  .mark-paper-action {
+    margin: 10px 0;
+
+    .icon {
+      cursor: pointer;
+      margin-left: 10px;
+      color: #666;
+      font-weight: bold;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+
+    .disable {
+      color: #d7d7d7;
+    }
+  }
+}
+
+.color-picker {
+  .color-picker-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+
+  .color-picker-wrap {
+    cursor: pointer;
+    width: 13%;
+    height: 26px;
+    border: #d7d7d7 1px solid;
+    border-radius: 4px;
+    transition: all .25s ease;
+  }
+
+  .color-picker-wrap-active {
+    transform: translateY(-6px);
+    box-shadow: 0 4px 8px -4px #666;
+  }
+}
+
+.radio-group {
+  display: block;
+  margin: 1em 0;
+}
+
+.graphical-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 20px 0;
+
+  .graphical-icon {
+    width: 30px;
+    height: 20;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: all .25s ease;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  
+    &-active {
+      transform: translateY(-6px);
+      // box-shadow: 0 4px 8px -4px rgba(59, 123, 251, 0.737);
+    }
+  }
+}

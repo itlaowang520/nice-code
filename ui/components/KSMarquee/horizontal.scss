@@ -1,0 +1,25 @@
+.marquee {
+    position: relative;
+    width: 600px;
+    overflow: hidden;
+
+    .container {
+        float: left;
+        width: 1000%;
+        height: 150px;
+        margin: 0;
+        padding: 0;
+
+        * {
+            float: left;
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    .clone * {
+        float: left;
+        margin: 0;
+        padding: 0;
+    }
+}

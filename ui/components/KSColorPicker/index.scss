@@ -1,0 +1,36 @@
+.ks-color-picker {
+    display: inline-block;
+    min-width: 100px;
+    height: 30px;
+    border-radius: 4px;
+    padding: 3px 5px;
+    border: 1px solid #d9d9d9;
+    position: relative;
+    top: 8px;
+
+    .color-show-container {
+        background: #fff;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+    }
+
+    .ks-color-picker-container {
+        position: absolute;
+        z-index: 2;
+    }
+
+    .ks-color-picker-marker {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+
+    .color-picker {
+        position: relative;
+        left: -6px;
+        top: 5px;
+    }
+}

@@ -1,0 +1,97 @@
+.layoutContent {
+    margin: 12px;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+/* 全局滚动条 */
+.body-scrollStyle {
+    scrollbar-color: transparent #7b7b7b;
+    scrollbar-width: thin;
+    ::-webkit-scrollbar {
+        width: 4px;
+        height: 6px;
+        background: transparent;
+        border-radius: 10px; /*外层轨道*/
+    }
+    ::-webkit-scrollbar-thumb {
+        display: block;
+        width: 6px;
+        margin: 0 auto;
+        border-radius: 10px;
+        background: #7b7b7b; /*内层轨道*/
+    }
+}
+/* 客制化配置样式 */
+.form-submit-wrapper {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #e9e9e9;
+    padding: 10px 16px;
+    background: #fff;
+    text-align: right;
+}
+.results-show-dialog {
+    min-width: 400px;
+    min-height: 400px;
+    position: fixed;
+    right: 50px;
+    top: 25%;
+    background-color: #fafafa;
+    border-radius: 15px;
+    .results-show-dialog-close {
+        color: #64a9e2;
+        position: relative;
+        width: 100%;
+        height: 22px;
+        > span {
+            position: absolute;
+            right: 9px;
+            top: 5px;
+            cursor: pointer;
+            width: 14px;
+            > img {
+                width: 100%;
+            }
+            :hover {
+                width: 18px;
+                right: 6px;
+            }
+        }
+    }
+    .results-show-dialog-image-tabs,
+    .results-show-dialog-image {
+        max-width: 400px;
+        box-sizing: border-box;
+        .results-show-dialog-image > img {
+            width: 100%;
+        }
+        .results-show-dialog-text {
+            margin: 5px;
+            font-size: 14px;
+        }
+    }
+}
+.drawer-input-color-wrraaer {
+    .ant-radio-inner {
+        background-color: rgba(99, 96, 96, -0.35);
+        border-color: rgba(99, 96, 96, -0.35);
+    }
+}
+.drawer-page-footer {
+    position: absolute;
+    right: 0;
+    bottom: 60px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 24px;
+    > p {
+        text-indent: 2em;
+        font-size: 12px;
+        > span {
+            font-size: 14px; 
+            margin: 0 2px;
+        }
+    }
+}

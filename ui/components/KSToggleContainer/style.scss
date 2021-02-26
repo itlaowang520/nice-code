@@ -1,0 +1,23 @@
+.ksToggleContainer {
+    background: #fff;
+
+    &-text {
+        font-size: 14px;
+    }
+
+    &-hidden {
+        height: 0;
+        overflow: hidden;
+        padding: 0;
+    }
+
+    &-icon {
+        font-size: 14px;
+        margin-left: 4px;
+        transition: transform .3s;
+    }
+
+    &-expand {
+        transform: rotate(-180deg);
+    }
+}

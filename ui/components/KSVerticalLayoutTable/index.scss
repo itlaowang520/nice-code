@@ -1,0 +1,120 @@
+.parent {
+    min-height: 200px;
+}
+
+.child {
+    min-height: 200px;
+}
+
+.colContainer {
+    position: relative;
+    box-sizing: border-box;
+    height: 100%;
+    overflow: hidden;
+}
+
+.colWhiteCard {
+    position: relative;
+    box-sizing: border-box;
+    border: 1px solid #e7e7e7;
+    border-radius: 4px;
+    background: #fff;
+    padding: 12px;
+    //height: calc(50% - 5px);
+}
+
+.colWhiteCard-content {
+    position: relative;
+}
+
+//.up {
+//    margin-bottom: 5px;
+//}
+
+.colWhiteCard-title {
+    font-weight: bold;
+    font-size: 14px;
+    padding: 0 0 12px;
+    margin-bottom: 6px;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.colWhiteCard-divider {
+    position: relative;
+    box-sizing: border-box;
+    padding: 3px;
+    width: 100%;
+    cursor: row-resize;
+    //display: table;
+
+    &:hover {
+        color: #1890ff;
+    }
+    //&::after {
+    //    content: '';
+    //    cursor: row-resize;
+    //    width: 100%;
+    //    padding: 3px;
+    //    box-sizing: border-box;
+    //    display: table;
+    //
+    //    &:hover {
+    //        color: #1890ff;
+    //    }
+    //}
+}
+
+
+.container {
+    overflow: hidden;
+}
+
+.content {
+    height: calc(100vh - 104px);
+    position: relative;
+    background: #fff;
+}
+
+.left {
+    width: 300px;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+.right {
+    margin-left: 504px;
+    background-color: #f8f9fa;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.h-resize {
+    height: 4px;
+    width: 100%;
+    background: #fff;
+    position: absolute;
+    bottom: 100px;
+    z-index: 1;
+    cursor: row-resize;
+    user-select: none;
+}
+
+.v-resize {
+    height: 100%;
+    width: 12px;
+    border-left: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+    position: absolute;
+    background: #fff;
+    left: 500px;
+    z-index: 2;
+    cursor: col-resize;
+    user-select: none;
+    text-align: center;
+}
+
+.v-resize .icon-equal {
+    line-height: calc(100vh - 104px);
+    font-size: 12px;
+}

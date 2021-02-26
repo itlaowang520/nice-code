@@ -1,0 +1,16 @@
+.ksExtendContainer {
+    position: relative;
+    padding: 10px 5px;
+    border: 1px dashed #ccc;
+    margin-bottom: 6px;
+
+    &-label {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+    }
+}
+
+.mar-l-8 {
+    margin-left: 8px;
+}

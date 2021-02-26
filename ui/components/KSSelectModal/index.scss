@@ -1,0 +1,43 @@
+.selectSearch input {
+    cursor: pointer;
+}
+
+.selectSearch {
+    cursor: pointer;
+
+    .anticon-close-circle {
+        cursor: pointer;
+        color: #ccc;
+        transition: color .3s;
+    }
+
+    &.disabled input {
+        cursor: not-allowed;
+    }
+
+    &.disabled {
+        cursor: not-allowed;
+    }
+}
+
+.selectSearch:hover {
+    .anticon-close-circle {
+        color: #999;
+    }
+
+    .anticon-close-circle:active {
+        color: #666;
+    }
+}
+
+.selectModalUpload {
+    width: calc(100% - 34px);
+    
+    &.ant-input-affix-wrapper {
+        width: calc(100% - 34px);
+    }
+}
+
+.selectModalUploadButton {
+    margin: 7px 5px 0;
+}

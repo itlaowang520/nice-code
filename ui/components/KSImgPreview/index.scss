@@ -1,0 +1,19 @@
+.image-preview-modal-wrap {
+    .modal-close-btn {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        line-height: 20px;
+        background: rgba(250, 250, 250, .7);
+        right: -9px;
+        top: -10px;
+        font-size: 12px;
+        border-radius: 100%;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #f0f0f0;
+        }
+    }
+}
